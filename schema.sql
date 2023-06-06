@@ -1,3 +1,6 @@
+-- Database creation
+CREATE DATABASE vet_clinic;
+
 -- Table: public.animals
 
 -- DROP TABLE IF EXISTS public.animals;
