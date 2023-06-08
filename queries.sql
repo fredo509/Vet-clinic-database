@@ -10,11 +10,12 @@ select * from animals WHERE name NOT IN ('Gabumon');
 select * from animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
 -- UPDATE queries OF PART 2
-
+BEGIN;
 update animals set species = 'unspecified';
 ROLLBACK;
 select * from animals;
 
+BEGIN:
 Update animals set species = 'digimon' WHERE name like '%mon';
 select * from animals;
 
@@ -29,7 +30,7 @@ drop table animals;
 Rollback;
 
 -- Delete queries of part 2
-
+BEGIN;
 Delete from animals where date_of_birth > '2022-01-01';
 select * from animals;
 
