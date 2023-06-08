@@ -14,3 +14,9 @@ CREATE TABLE IF NOT EXISTS public.animals
     neutered boolean,
     weight_kg decimal
 );
+
+-- Project part 2
+
+-- ADD new column
+
+ALTER TABLE animals add species TEXT;
